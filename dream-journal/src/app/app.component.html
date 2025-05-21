@@ -23,9 +23,33 @@
     height: 100vh;
     padding-top: 1rem; /* Add slight padding for spacing */
     background-color: #f9f9f9;
+    position: relative; /* Needed for the sidebar positioning */
+  }
+
+  .right-tab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #87CEEB;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .right-tab h2 {
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive; /* Same font as the main title */
+    color: white;
+    margin: 0 0 1rem 0;
   }
 </style>
 
 <main>
   <h1>Dream Journal</h1>
+  <div class="right-tab">
+    <h2>Right Tab</h2>
+    <p>Content for the right tab goes here.</p>
+  </div>
 </main>
